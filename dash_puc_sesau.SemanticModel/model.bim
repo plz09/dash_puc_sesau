@@ -8,7 +8,11 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.901.0 (24.07)"
+        "value": "2.137.751.0 (24.10)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
       }
     ],
     "culture": "pt-BR",
