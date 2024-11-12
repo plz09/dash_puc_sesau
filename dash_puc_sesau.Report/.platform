@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "dash_puc_sesau"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3cf48c46-0e4e-4178-a98b-919b0a83015b"
+  }
+}
