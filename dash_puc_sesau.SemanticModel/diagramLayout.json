@@ -10,21 +10,21 @@
       "nodes": [
         {
           "location": {
-            "x": 10,
-            "y": 351.59574178649552
+            "x": 0,
+            "y": 0
           },
           "nodeIndex": "dw dim_data",
           "nodeLineageTag": "74847864-35d3-4387-bca5-c9fddac97379",
           "size": {
-            "height": 200,
+            "height": 225,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 297.00290205929457,
-            "y": -10
+            "x": 244.00290205929457,
+            "y": 0
           },
           "nodeIndex": "dw dim_equipes",
           "nodeLineageTag": "6dc8c00d-2f4e-431a-87d7-de884291a960",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 297.13020487962888,
-            "y": 518.985129899417
+            "x": 729.13020487962888,
+            "y": 0
           },
           "nodeIndex": "dw dim_profissionais",
           "nodeLineageTag": "c633b59d-2e56-4329-aec3-3d04986e99dc",
@@ -49,21 +49,21 @@
         },
         {
           "location": {
-            "x": 584.12384814406664,
-            "y": 172.01609329110829
+            "x": 488.12384814406664,
+            "y": 0
           },
           "nodeIndex": "dw dim_unidades",
           "nodeLineageTag": "871e72b7-c1e5-4675-8819-3c87dcaf0fd0",
           "size": {
-            "height": 200,
+            "height": 226,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 297.07038680520873,
-            "y": 266.58307903340807
+            "x": 288.07038680520873,
+            "y": 305.58307903340807
           },
           "nodeIndex": "dw fato_atendimentos",
           "nodeLineageTag": "a8a9c096-fdd9-4421-88e2-8e43407a3a0f",
@@ -75,7 +75,7 @@
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 100,
+      "zoomValue": 80,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

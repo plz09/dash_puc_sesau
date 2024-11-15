@@ -4,11 +4,11 @@
     "annotations": [
       {
         "name": "PBI_ProTooling",
-        "value": "[\"DevMode\"]"
+        "value": "[\"DevMode\",\"DaxQueryView_Desktop\"]"
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.901.0 (24.07)"
+        "value": "2.138.782.0 (24.11)"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -103,6 +103,16 @@
     "tables": [
       {
         "name": "dw dim_data",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_data",
@@ -198,7 +208,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_dim_data = Fonte{[Schema=\"dw\",Item=\"dim_data\"]}[Data]",
                 "in",
                 "    dw_dim_data"
@@ -231,7 +241,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "b0cb8bfa-5ef5-48f9-8879-4529aa05ed21",
@@ -254,7 +263,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "a6ecdbd1-ef5e-43d2-b27c-fd0cc67ebfef",
             "summarizeBy": "none",
@@ -275,7 +283,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "6e2d5f06-debf-4d59-8042-837787178419",
             "summarizeBy": "none",
@@ -317,7 +324,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "086269b5-dbe2-4600-b936-00f00ebbaecf",
             "summarizeBy": "none",
@@ -359,7 +365,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "a8a7242b-2263-42b7-9c7a-2bd3556509b1",
             "summarizeBy": "none",
@@ -437,7 +442,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "5731905b-9a5a-4fa7-a6d5-da038ad24c17",
@@ -460,7 +464,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "8e64ce42-1d17-4f7d-8e3f-0135fc5d103e",
             "summarizeBy": "none",
@@ -481,7 +484,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "5e49623a-cb7e-4a49-b261-ec02a7a036ed",
             "summarizeBy": "none",
@@ -523,7 +525,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "2d40d222-4b95-4be8-8204-ad066b929470",
             "summarizeBy": "none",
@@ -565,7 +566,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "d5f2ba4f-2864-43de-b693-b15736ad8d9f",
             "summarizeBy": "none",
@@ -626,6 +626,16 @@
       },
       {
         "name": "dw dim_equipes",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_equipes",
@@ -718,7 +728,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_dim_equipes = Fonte{[Schema=\"dw\",Item=\"dim_equipes\"]}[Data]",
                 "in",
                 "    dw_dim_equipes"
@@ -730,6 +740,16 @@
       },
       {
         "name": "dw dim_profissionais",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_profissionais",
@@ -822,7 +842,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_dim_profissionais = Fonte{[Schema=\"dw\",Item=\"dim_profissionais\"]}[Data]",
                 "in",
                 "    dw_dim_profissionais"
@@ -834,6 +854,16 @@
       },
       {
         "name": "dw dim_unidades",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_unidades",
@@ -911,7 +941,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_dim_unidades = Fonte{[Schema=\"dw\",Item=\"dim_unidades\"]}[Data]",
                 "in",
                 "    dw_dim_unidades"
@@ -923,6 +953,16 @@
       },
       {
         "name": "dw fato_atendimentos",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_unidades",
@@ -1003,7 +1043,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_fato_atendimentos = Fonte{[Schema=\"dw\",Item=\"fato_atendimentos\"]}[Data]",
                 "in",
                 "    dw_fato_atendimentos"
