@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.901.0 (24.07)"
+        "value": "2.138.782.0 (24.11)"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -25,8 +25,3152 @@
         "name": "pt-BR",
         "linguisticMetadata": {
           "content": {
+            "Entities": {
+              "dw_dim_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dw dim_data": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.ano": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "ConceptualProperty": "ano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ano": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.data_completa": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "ConceptualProperty": "data_completa"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data completa": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data_completa": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "information completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "fact completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "info completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "statistic completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "document completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "figure completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "record completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.data_completa.variation.hierarquia_de_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "Hierarchy": "Hierarquia de datas",
+                    "VariationSet": "Variation",
+                    "VariationSource": "data_completa"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hierarquia de data": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hierarquia de information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de document": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de figure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de record": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.data_completa.variation.hierarquia_de_data.ano": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Ano",
+                    "VariationSet": "Variation",
+                    "VariationSource": "data_completa"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ano": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data completa ano": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information completa ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact completa ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info completa ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic completa ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document completa ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure completa ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record completa ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.data_completa.variation.hierarquia_de_data.dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Dia",
+                    "VariationSet": "Variation",
+                    "VariationSource": "data_completa"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data completa dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information completa dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact completa dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info completa dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic completa dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document completa dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure completa dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record completa dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.data_completa.variation.hierarquia_de_data.mê": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Mês",
+                    "VariationSet": "Variation",
+                    "VariationSource": "data_completa"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "mê": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data completa mê": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information completa mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact completa mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info completa mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic completa mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document completa mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure completa mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record completa mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Trimestre",
+                    "VariationSet": "Variation",
+                    "VariationSource": "data_completa"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "trimestre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data completa trimestre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information completa trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact completa trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info completa trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic completa trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document completa trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure completa trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record completa trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "ConceptualProperty": "dia"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dia": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.me": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "ConceptualProperty": "mes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "me": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_data.sk_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_data",
+                    "ConceptualProperty": "sk_data"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk data": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_data": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "data": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "sk information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sk fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sk info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sk statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "sk document": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "sk figure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "dw_dim_equipe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_equipes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dw dim_equipe": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_equipe.data_ativacao_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_equipes",
+                    "ConceptualProperty": "data_ativacao_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data ativacao id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data_ativacao_id": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "data ativacao identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "data ativacao identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "data ativacao identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "data ativacao credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "information ativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact ativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info ativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic ativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document ativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure ativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "dw_dim_equipe.data_desativacao_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_equipes",
+                    "ConceptualProperty": "data_desativacao_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data desativacao id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data_desativacao_id": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "data desativacao identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "data desativacao identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "data desativacao identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "data desativacao credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "information desativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact desativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info desativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic desativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document desativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure desativacao id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "dw_dim_equipe.equipe_ine": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_equipes",
+                    "ConceptualProperty": "equipe_ine"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "equipe ine": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "equipe_ine": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_equipe.equipe_nome": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_equipes",
+                    "ConceptualProperty": "equipe_nome"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "equipe nome": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "equipe_nome": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_equipe.equipe_tipo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_equipes",
+                    "ConceptualProperty": "equipe_tipo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "equipe tipo": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "equipe_tipo": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_equipe.sk_equipe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_equipes",
+                    "ConceptualProperty": "sk_equipes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk equipe": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_equipes": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_profissionais": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_profissionais"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dw dim_profissionais": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_profissionais.data_desligamento_equipe_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_profissionais",
+                    "ConceptualProperty": "data_desligamento_equipe_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data desligamento equipe id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data_desligamento_equipe_id": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "data desligamento equipe identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "data desligamento equipe identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "data desligamento equipe identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "data desligamento equipe credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "information desligamento equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "fact desligamento equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "info desligamento equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "statistic desligamento equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "document desligamento equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "figure desligamento equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  }
+                ]
+              },
+              "dw_dim_profissionais.data_entrada_equipe_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_profissionais",
+                    "ConceptualProperty": "data_entrada_equipe_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data entrada equipe id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data_entrada_equipe_id": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "data entrada equipe identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "data entrada equipe identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "data entrada equipe identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "data entrada equipe credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "information entrada equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "fact entrada equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "info entrada equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "statistic entrada equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "document entrada equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "figure entrada equipe id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  }
+                ]
+              },
+              "dw_dim_profissionais.profissional_cbo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_profissionais",
+                    "ConceptualProperty": "profissional_cbo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "profissional cbo": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "profissional_cbo": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_profissionais.profissional_cns": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_profissionais",
+                    "ConceptualProperty": "profissional_cns"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "profissional cns": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "profissional_cns": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_profissionais.profissional_nome": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_profissionais",
+                    "ConceptualProperty": "profissional_nome"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "profissional nome": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "profissional_nome": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_profissionais.sk_profissionais": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_profissionais",
+                    "ConceptualProperty": "sk_profissionais"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk profissionais": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_profissionais": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_dim_unidade": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_unidades"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dw dim_unidade": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_unidade.bairro": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_unidades",
+                    "ConceptualProperty": "bairro"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "bairro": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_unidade.cne": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_unidades",
+                    "ConceptualProperty": "cnes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cne": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_unidade.logradouro": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_unidades",
+                    "ConceptualProperty": "logradouro"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "logradouro": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_dim_unidade.nome": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_unidades",
+                    "ConceptualProperty": "nome"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nome": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Unidades": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dw_dim_unidade.sk_unidade": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw dim_unidades",
+                    "ConceptualProperty": "sk_unidades"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk unidade": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_unidades": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_fato_atendimento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw fato_atendimentos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dw fato_atendimento": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dw_fato_atendimento.qt_atendimento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw fato_atendimentos",
+                    "ConceptualProperty": "qt_atendimentos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "qt atendimento": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "qt_atendimentos": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "dw_fato_atendimento.sk_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw fato_atendimentos",
+                    "ConceptualProperty": "sk_data"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk data": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_data": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "data": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "sk information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sk fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sk info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sk statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "sk document": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "sk figure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "dw_fato_atendimento.sk_equipe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw fato_atendimentos",
+                    "ConceptualProperty": "sk_equipes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk equipe": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_equipes": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "dw_fato_atendimento.sk_profissionais": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw fato_atendimentos",
+                    "ConceptualProperty": "sk_profissionais"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk profissionais": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_profissionais": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "dw_fato_atendimento.sk_unidade": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dw fato_atendimentos",
+                    "ConceptualProperty": "sk_unidades"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sk unidade": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sk_unidades": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              }
+            },
             "Language": "en-US",
-            "Version": "1.0.0"
+            "Relationships": {
+              "dw_dim_data_data_completa_has_variation_hierarquia_de_data": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa"
+                      }
+                    },
+                    "ID": "data_completas_have_hierarquia_de_data",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_data_completa_variation_hierarquia_de_data_ano_has_dw_dim_data_data_completa_variation_hierarquia_de_data_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.ano"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.ano"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_data_completa_variation_hierarquia_de_data_has_ano": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_anos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.ano"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_data_completa_variation_hierarquia_de_data_has_dia": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.dia"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_data_completa_variation_hierarquia_de_data_has_mê": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_mê",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_data_completa_variation_hierarquia_de_data_has_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_data_completa_variation_hierarquia_de_data_mê_has_dw_dim_data_data_completa_variation_hierarquia_de_data_dia": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_data_completa_variation_hierarquia_de_data_trimestre_has_dw_dim_data_data_completa_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.mê"
+                    }
+                  },
+                  "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_has_ano": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data"
+                      }
+                    },
+                    "ID": "dw_dim_datas_have_anos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data"
+                    }
+                  },
+                  "dw_dim_data.ano": {
+                    "Target": {
+                      "Entity": "dw_dim_data.ano"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_has_data_completa": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.data_completa"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data"
+                      }
+                    },
+                    "ID": "dw_dim_datas_have_data_completas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data"
+                    }
+                  },
+                  "dw_dim_data.data_completa": {
+                    "Target": {
+                      "Entity": "dw_dim_data.data_completa"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_has_dia": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data"
+                      }
+                    },
+                    "ID": "dw_dim_datas_have_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data"
+                    }
+                  },
+                  "dw_dim_data.dia": {
+                    "Target": {
+                      "Entity": "dw_dim_data.dia"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_has_me": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.me"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data"
+                      }
+                    },
+                    "ID": "dw_dim_datas_have_me",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data"
+                    }
+                  },
+                  "dw_dim_data.me": {
+                    "Target": {
+                      "Entity": "dw_dim_data.me"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_data_has_sk_data": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data.sk_data"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data"
+                      }
+                    },
+                    "ID": "dw_dim_datas_have_sk_data",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data"
+                    }
+                  },
+                  "dw_dim_data.sk_data": {
+                    "Target": {
+                      "Entity": "dw_dim_data.sk_data"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_equipe_has_data_ativacao_id": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_equipes"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_equipe.data_ativacao_id"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_equipe"
+                      }
+                    },
+                    "ID": "dw_dim_equipes_have_data_ativacao_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe"
+                    }
+                  },
+                  "dw_dim_equipe.data_ativacao_id": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe.data_ativacao_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_equipe_has_data_desativacao_id": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_equipes"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_equipe.data_desativacao_id"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_equipe"
+                      }
+                    },
+                    "ID": "dw_dim_equipes_have_data_desativacao_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe"
+                    }
+                  },
+                  "dw_dim_equipe.data_desativacao_id": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe.data_desativacao_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_equipe_has_equipe_ine": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_equipes"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_equipe.equipe_ine"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_equipe"
+                      }
+                    },
+                    "ID": "dw_dim_equipes_have_equipe_ines",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe"
+                    }
+                  },
+                  "dw_dim_equipe.equipe_ine": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe.equipe_ine"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_equipe_has_equipe_nome": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_equipes"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_equipe.equipe_nome"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_equipe"
+                      }
+                    },
+                    "ID": "dw_dim_equipes_have_equipe_nome",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe"
+                    }
+                  },
+                  "dw_dim_equipe.equipe_nome": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe.equipe_nome"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_equipe_has_equipe_tipo": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_equipes"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_equipe.equipe_tipo"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_equipe"
+                      }
+                    },
+                    "ID": "dw_dim_equipes_have_equipe_tipos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe"
+                    }
+                  },
+                  "dw_dim_equipe.equipe_tipo": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe.equipe_tipo"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_equipe_has_sk_equipe": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_equipes"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_equipe.sk_equipe"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_equipe"
+                      }
+                    },
+                    "ID": "dw_dim_equipes_have_sk_equipes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe"
+                    }
+                  },
+                  "dw_dim_equipe.sk_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe.sk_equipe"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_data_desligamento_equipe_id": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_profissionais.data_desligamento_equipe_id"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_data_desligamento_equipe_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "dw_dim_profissionais.data_desligamento_equipe_id": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais.data_desligamento_equipe_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_data_entrada_equipe_id": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_profissionais.data_entrada_equipe_id"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_data_entrada_equipe_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "dw_dim_profissionais.data_entrada_equipe_id": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais.data_entrada_equipe_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_profissional_cbo": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_profissionais.profissional_cbo"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_profissional_cbos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "dw_dim_profissionais.profissional_cbo": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais.profissional_cbo"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_profissional_cns": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_profissionais.profissional_cns"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_profissional_cns",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "dw_dim_profissionais.profissional_cns": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais.profissional_cns"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_profissional_nome": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_profissionais.profissional_nome"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_profissional_nome",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "dw_dim_profissionais.profissional_nome": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais.profissional_nome"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_sk_profissionais": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_profissionais.sk_profissionais"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_sk_profissionaises",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "dw_dim_profissionais.sk_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais.sk_profissionais"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_unidade_has_bairro": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_unidades"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_unidade.bairro"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_unidade"
+                      }
+                    },
+                    "ID": "dw_dim_unidades_have_bairros",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_unidade": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade"
+                    }
+                  },
+                  "dw_dim_unidade.bairro": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade.bairro"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_unidade_has_cne": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_unidades"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_unidade.cne"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_unidade"
+                      }
+                    },
+                    "ID": "dw_dim_unidades_have_cnes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_unidade": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade"
+                    }
+                  },
+                  "dw_dim_unidade.cne": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade.cne"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_unidade_has_logradouro": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_unidades"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_unidade.logradouro"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_unidade"
+                      }
+                    },
+                    "ID": "dw_dim_unidades_have_logradouros",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_unidade": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade"
+                    }
+                  },
+                  "dw_dim_unidade.logradouro": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade.logradouro"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_unidade_has_nome": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_unidades"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_unidade.nome"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_unidade"
+                      }
+                    },
+                    "ID": "dw_dim_unidades_have_nome",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_unidade": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade"
+                    }
+                  },
+                  "dw_dim_unidade.nome": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade.nome"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_unidade_has_sk_unidade": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_unidades"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_unidade.sk_unidade"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_unidade"
+                      }
+                    },
+                    "ID": "dw_dim_unidades_have_sk_unidades",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_unidade": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade"
+                    }
+                  },
+                  "dw_dim_unidade.sk_unidade": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade.sk_unidade"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_fato_atendimento_has_dw_dim_data": {
+                "Binding": {
+                  "ConceptualEntity": "dw fato_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_data"
+                      },
+                      "Subject": {
+                        "Role": "dw_fato_atendimento"
+                      }
+                    },
+                    "ID": "dw_fato_atendimentos_have_dw_dim_datas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_fato_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_data"
+                      }
+                    },
+                    "ID": "dw_dim_datas_have_dw_fato_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_data": {
+                    "Nouns": [
+                      {
+                        "sk data": {
+                          "State": "Generated"
+                        }
+                      },
+                      {
+                        "data": {
+                          "State": "Generated"
+                        }
+                      }
+                    ],
+                    "Target": {
+                      "Entity": "dw_dim_data"
+                    }
+                  },
+                  "dw_fato_atendimento": {
+                    "Target": {
+                      "Entity": "dw_fato_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_fato_atendimento_has_dw_dim_equipe": {
+                "Binding": {
+                  "ConceptualEntity": "dw fato_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_equipe"
+                      },
+                      "Subject": {
+                        "Role": "dw_fato_atendimento"
+                      }
+                    },
+                    "ID": "dw_fato_atendimentos_have_dw_dim_equipes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_fato_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_equipe"
+                      }
+                    },
+                    "ID": "dw_dim_equipes_have_dw_fato_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_equipe": {
+                    "Target": {
+                      "Entity": "dw_dim_equipe"
+                    }
+                  },
+                  "dw_fato_atendimento": {
+                    "Target": {
+                      "Entity": "dw_fato_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_fato_atendimento_has_dw_dim_profissionais": {
+                "Binding": {
+                  "ConceptualEntity": "dw fato_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_profissionais"
+                      },
+                      "Subject": {
+                        "Role": "dw_fato_atendimento"
+                      }
+                    },
+                    "ID": "dw_fato_atendimentos_have_dw_dim_profissionaises",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_fato_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_dw_fato_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "dw_fato_atendimento": {
+                    "Target": {
+                      "Entity": "dw_fato_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_fato_atendimento_has_dw_dim_unidade": {
+                "Binding": {
+                  "ConceptualEntity": "dw fato_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_dim_unidade"
+                      },
+                      "Subject": {
+                        "Role": "dw_fato_atendimento"
+                      }
+                    },
+                    "ID": "dw_fato_atendimentos_have_dw_dim_unidades",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_fato_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_unidade"
+                      }
+                    },
+                    "ID": "dw_dim_unidades_have_dw_fato_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_unidade": {
+                    "Target": {
+                      "Entity": "dw_dim_unidade"
+                    }
+                  },
+                  "dw_fato_atendimento": {
+                    "Target": {
+                      "Entity": "dw_fato_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_fato_atendimento_has_qt_atendimento": {
+                "Binding": {
+                  "ConceptualEntity": "dw fato_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dw_fato_atendimento.qt_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "dw_fato_atendimento"
+                      }
+                    },
+                    "ID": "dw_fato_atendimentos_have_qt_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_fato_atendimento": {
+                    "Target": {
+                      "Entity": "dw_fato_atendimento"
+                    }
+                  },
+                  "dw_fato_atendimento.qt_atendimento": {
+                    "Target": {
+                      "Entity": "dw_fato_atendimento.qt_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
           },
           "contentType": "json"
         }
@@ -39,15 +3183,15 @@
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
     "relationships": [
       {
-        "name": "a0705a6b-8c14-451b-bb4d-d4624d62e93e",
+        "name": "f50a1941-b7b3-4695-a1ba-52d53d8a0a9d",
         "fromColumn": "data_completa",
         "fromTable": "dw dim_data",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
-        "toTable": "LocalDateTable_acd5ea7f-1fd7-4384-a0e3-8398f4e1d3d8"
+        "toTable": "LocalDateTable_63795c96-dd41-4973-abf1-7d6f2164cdf3"
       },
       {
-        "name": "c4fa078b-78f6-4394-8551-714c6888d9a5",
+        "name": "078dd1d2-b717-489d-ab5b-ea3aabddbf1d",
         "annotations": [
           {
             "name": "PBI_IsFromSource",
@@ -60,7 +3204,7 @@
         "toTable": "dw dim_data"
       },
       {
-        "name": "a8a3d356-f00a-44f9-8b71-46640e1ac2e7",
+        "name": "8202fc65-5f85-4734-ace2-0b11b22d963f",
         "annotations": [
           {
             "name": "PBI_IsFromSource",
@@ -73,7 +3217,7 @@
         "toTable": "dw dim_equipes"
       },
       {
-        "name": "25d49e97-d2b7-494d-a5d6-1b3e81850425",
+        "name": "33d9ac53-ad93-450e-b248-8fb094460615",
         "annotations": [
           {
             "name": "PBI_IsFromSource",
@@ -86,7 +3230,7 @@
         "toTable": "dw dim_profissionais"
       },
       {
-        "name": "fe41815c-28ad-4a73-b25f-0b66379db0fc",
+        "name": "50be8358-151e-4e2e-874d-669afba75ab0",
         "annotations": [
           {
             "name": "PBI_IsFromSource",
@@ -101,113 +3245,6 @@
     ],
     "sourceQueryCulture": "pt-BR",
     "tables": [
-      {
-        "name": "dw dim_data",
-        "columns": [
-          {
-            "name": "sk_data",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "dcea369a-2777-4be5-b930-13bf6cf7d714",
-            "sourceColumn": "sk_data",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "data_completa",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "36a7c3bc-a83e-4c8b-9a87-c84700061220",
-            "sourceColumn": "data_completa",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_acd5ea7f-1fd7-4384-a0e3-8398f4e1d3d8"
-                },
-                "isDefault": true,
-                "relationship": "a0705a6b-8c14-451b-bb4d-d4624d62e93e"
-              }
-            ]
-          },
-          {
-            "name": "dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "ab6436d4-dcd5-4816-8ca2-885c78022b2b",
-            "sourceColumn": "dia",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "mes",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "e7cd20a5-657a-4737-954d-70fb5ba3ae38",
-            "sourceColumn": "mes",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "a6a38515-224b-4930-b153-c702eb811b20",
-            "sourceColumn": "ano",
-            "summarizeBy": "sum"
-          }
-        ],
-        "lineageTag": "74847864-35d3-4387-bca5-c9fddac97379",
-        "partitions": [
-          {
-            "name": "dw dim_data",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
-                "    dw_dim_data = Fonte{[Schema=\"dw\",Item=\"dim_data\"]}[Data]",
-                "in",
-                "    dw_dim_data"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
       {
         "name": "DateTableTemplate_2fdab1de-35ec-4b96-8c8a-6a4b54bfbc45",
         "annotations": [
@@ -231,7 +3268,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "b0cb8bfa-5ef5-48f9-8879-4529aa05ed21",
@@ -254,7 +3290,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "a6ecdbd1-ef5e-43d2-b27c-fd0cc67ebfef",
             "summarizeBy": "none",
@@ -275,7 +3310,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "6e2d5f06-debf-4d59-8042-837787178419",
             "summarizeBy": "none",
@@ -317,7 +3351,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "086269b5-dbe2-4600-b936-00f00ebbaecf",
             "summarizeBy": "none",
@@ -359,7 +3392,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "a8a7242b-2263-42b7-9c7a-2bd3556509b1",
             "summarizeBy": "none",
@@ -419,7 +3451,114 @@
         ]
       },
       {
-        "name": "LocalDateTable_acd5ea7f-1fd7-4384-a0e3-8398f4e1d3d8",
+        "name": "dw dim_data",
+        "columns": [
+          {
+            "name": "sk_data",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "12f9e9bd-95d0-414c-aa73-83d1ed121376",
+            "sourceColumn": "sk_data",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_completa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "e9f64a1f-4fee-41d5-ba81-95133ee56137",
+            "sourceColumn": "data_completa",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_63795c96-dd41-4973-abf1-7d6f2164cdf3"
+                },
+                "isDefault": true,
+                "relationship": "f50a1941-b7b3-4695-a1ba-52d53d8a0a9d"
+              }
+            ]
+          },
+          {
+            "name": "dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3df10dda-947f-49cb-8b50-ce0734b1490d",
+            "sourceColumn": "dia",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d579fc76-a478-48f1-a2cb-0e6b62eb7911",
+            "sourceColumn": "mes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cdaf46ae-ffbc-47dd-be47-5a93233e5231",
+            "sourceColumn": "ano",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "fcccb4c6-396c-417f-8769-498dc2b5d1ff",
+        "partitions": [
+          {
+            "name": "dw dim_data",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
+                "    dw_dim_data = Fonte{[Schema=\"dw\",Item=\"dim_data\"]}[Data]",
+                "in",
+                "    dw_dim_data"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_63795c96-dd41-4973-abf1-7d6f2164cdf3",
         "annotations": [
           {
             "name": "__PBI_LocalDateTable",
@@ -437,10 +3576,9 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
-            "lineageTag": "5731905b-9a5a-4fa7-a6d5-da038ad24c17",
+            "lineageTag": "8ac28faa-69a8-4093-9b6c-5ab2ab61e6bc",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
@@ -460,9 +3598,8 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
-            "lineageTag": "8e64ce42-1d17-4f7d-8e3f-0135fc5d103e",
+            "lineageTag": "80a63cae-47df-4b67-b281-5d0b69df9e42",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -481,9 +3618,8 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
-            "lineageTag": "5e49623a-cb7e-4a49-b261-ec02a7a036ed",
+            "lineageTag": "1e9f02c1-511c-4053-956d-b126f91d469a",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -503,7 +3639,7 @@
             "dataType": "string",
             "expression": "FORMAT([Date], \"MMMM\")",
             "isHidden": true,
-            "lineageTag": "1cc6aa13-48f9-49db-b8f8-6554139dd6ba",
+            "lineageTag": "62c11a6e-a93d-4339-bf04-a21303298beb",
             "sortByColumn": "MonthNo",
             "summarizeBy": "none",
             "type": "calculated"
@@ -523,9 +3659,8 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
-            "lineageTag": "2d40d222-4b95-4be8-8204-ad066b929470",
+            "lineageTag": "0ca15667-ac04-4328-94b7-6a9f3a5c0994",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -545,7 +3680,7 @@
             "dataType": "string",
             "expression": "\"Trim \" & [QuarterNo]",
             "isHidden": true,
-            "lineageTag": "5bc7d3d9-94ef-4be9-aea7-c1935a5efac1",
+            "lineageTag": "6faa100b-a793-4d7f-b2dc-3a63b96e9aac",
             "sortByColumn": "QuarterNo",
             "summarizeBy": "none",
             "type": "calculated"
@@ -565,9 +3700,8 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
-            "lineageTag": "d5f2ba4f-2864-43de-b693-b15736ad8d9f",
+            "lineageTag": "aea1b90a-a3ba-4043-99da-4b49b0de5ce0",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -585,36 +3719,36 @@
               {
                 "name": "Ano",
                 "column": "Ano",
-                "lineageTag": "30ce4f22-78c7-4d50-9b7a-caf4f5954c53",
+                "lineageTag": "87c4491f-f013-4592-9847-232c5ba2e40e",
                 "ordinal": 0
               },
               {
                 "name": "Trimestre",
                 "column": "Trimestre",
-                "lineageTag": "8e4b0869-7986-4d99-a08c-da24fe65254a",
+                "lineageTag": "aa1999b3-af1b-4306-9538-32ed51c38362",
                 "ordinal": 1
               },
               {
                 "name": "Mês",
                 "column": "Mês",
-                "lineageTag": "4f827b5a-f0bf-41b4-b599-3e3c43a13744",
+                "lineageTag": "9250eb66-d548-4d26-8ca9-646f153d4aff",
                 "ordinal": 2
               },
               {
                 "name": "Dia",
                 "column": "Dia",
-                "lineageTag": "392d6d2b-a997-452e-b321-4d93bc7dccdb",
+                "lineageTag": "224b8aa2-00fb-4a91-b683-70ffa2328080",
                 "ordinal": 3
               }
             ],
-            "lineageTag": "34f4a33f-cd3b-44a1-97bf-ec923eacafa2"
+            "lineageTag": "b7c327a0-023e-4097-a717-068e4bc21baa"
           }
         ],
         "isHidden": true,
-        "lineageTag": "c9aeaa54-483b-44b4-82f9-85543739b9d6",
+        "lineageTag": "88872755-91ba-4793-a2c0-e6cc0130da11",
         "partitions": [
           {
-            "name": "LocalDateTable_acd5ea7f-1fd7-4384-a0e3-8398f4e1d3d8",
+            "name": "LocalDateTable_63795c96-dd41-4973-abf1-7d6f2164cdf3",
             "mode": "import",
             "source": {
               "expression": "Calendar(Date(Year(MIN('dw dim_data'[data_completa])), 1, 1), Date(Year(MAX('dw dim_data'[data_completa])), 12, 31))",
@@ -637,7 +3771,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "9eca35ee-916e-4bb9-818a-c71409534246",
+            "lineageTag": "4931c7bd-f473-4c3e-becb-ef41e6745b98",
             "sourceColumn": "sk_equipes",
             "summarizeBy": "none"
           },
@@ -651,7 +3785,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "413b2524-8419-483d-8ae5-c3db606c9d0f",
+            "lineageTag": "b821ba67-3adf-4b67-93c0-873ed2c5e174",
             "sourceColumn": "equipe_ine",
             "summarizeBy": "none"
           },
@@ -664,7 +3798,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "673fe729-5c0e-46b2-a2eb-3e25f04bff30",
+            "lineageTag": "4a8bad1c-e098-4a8d-aca1-f6e11be062af",
             "sourceColumn": "equipe_nome",
             "summarizeBy": "none"
           },
@@ -677,7 +3811,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "c5c76278-1276-4272-b6e0-44a1e4422c8b",
+            "lineageTag": "1bd61089-2f07-4687-90f8-6f36051c358f",
             "sourceColumn": "equipe_tipo",
             "summarizeBy": "none"
           },
@@ -691,7 +3825,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "ad201f6c-f72a-4deb-bffa-0eb67b1ed46f",
+            "lineageTag": "65dafc2f-3f0b-44c9-8727-111d3bcd90aa",
             "sourceColumn": "data_ativacao_id",
             "summarizeBy": "none"
           },
@@ -705,12 +3839,12 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "53e0b443-4209-4a0a-aea9-273794728fcb",
+            "lineageTag": "dd99a900-4be2-43e8-98c3-aa643ba9bb49",
             "sourceColumn": "data_desativacao_id",
             "summarizeBy": "none"
           }
         ],
-        "lineageTag": "6dc8c00d-2f4e-431a-87d7-de884291a960",
+        "lineageTag": "4ad801d6-c1d1-41c8-94f3-e44eaf79fa5d",
         "partitions": [
           {
             "name": "dw dim_equipes",
@@ -718,7 +3852,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_dim_equipes = Fonte{[Schema=\"dw\",Item=\"dim_equipes\"]}[Data]",
                 "in",
                 "    dw_dim_equipes"
@@ -741,7 +3875,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "0c7d189c-0d03-486e-836c-c19991d6dafe",
+            "lineageTag": "603c6a84-707c-443e-b5a2-db2fe525fbfc",
             "sourceColumn": "sk_profissionais",
             "summarizeBy": "none"
           },
@@ -755,7 +3889,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "eeb99549-6bba-4f71-8dc6-c044fe2e16db",
+            "lineageTag": "db406e0c-04a4-467d-a2e4-4c1cd3347a94",
             "sourceColumn": "profissional_cns",
             "summarizeBy": "none"
           },
@@ -768,7 +3902,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "20365a1b-7afa-4503-98fc-5c88b11cd98b",
+            "lineageTag": "26e56c06-c49b-4971-88db-b8a2b708c84f",
             "sourceColumn": "profissional_cbo",
             "summarizeBy": "none"
           },
@@ -781,7 +3915,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "e9f479fc-8a19-420c-9845-90e68f190b8f",
+            "lineageTag": "55cb3b04-2fae-4628-a980-a50ae5cf3abc",
             "sourceColumn": "profissional_nome",
             "summarizeBy": "none"
           },
@@ -795,7 +3929,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "4725c485-b2f9-4fa2-bcc9-b60354872e1a",
+            "lineageTag": "4cafa2ec-0591-4fcc-ba4f-5fedc28c33b5",
             "sourceColumn": "data_entrada_equipe_id",
             "summarizeBy": "none"
           },
@@ -809,12 +3943,12 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "ad345441-b066-49ca-beb2-197624105d33",
+            "lineageTag": "274f0198-15a0-4540-a983-d9a1f157707c",
             "sourceColumn": "data_desligamento_equipe_id",
             "summarizeBy": "none"
           }
         ],
-        "lineageTag": "c633b59d-2e56-4329-aec3-3d04986e99dc",
+        "lineageTag": "f5d71542-347d-4ca5-ae47-8b1bc0601eb2",
         "partitions": [
           {
             "name": "dw dim_profissionais",
@@ -822,7 +3956,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_dim_profissionais = Fonte{[Schema=\"dw\",Item=\"dim_profissionais\"]}[Data]",
                 "in",
                 "    dw_dim_profissionais"
@@ -845,7 +3979,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "f64d83b8-63ec-4011-9db3-c506adc1c5e7",
+            "lineageTag": "5d835cab-b107-48aa-a580-b614ba627aa7",
             "sourceColumn": "sk_unidades",
             "summarizeBy": "none"
           },
@@ -859,7 +3993,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "56fb2e97-9a50-4b18-940c-ebcfcc4bffa8",
+            "lineageTag": "3c034de1-34bf-4314-8e1e-a951212b7fad",
             "sourceColumn": "cnes",
             "summarizeBy": "none"
           },
@@ -872,7 +4006,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "c242f969-2a4d-4c6a-b2a7-ff6978fe4dee",
+            "lineageTag": "771f5ff7-0213-4e5e-ba7c-713193779b83",
             "sourceColumn": "nome",
             "summarizeBy": "none"
           },
@@ -885,7 +4019,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "4fc17e19-e524-4f3a-960c-38ef431378a5",
+            "lineageTag": "dddde480-cb2c-49e8-9e07-e27ce0d1a396",
             "sourceColumn": "logradouro",
             "summarizeBy": "none"
           },
@@ -898,12 +4032,12 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "65035d4c-43c4-4b32-9a22-7f44d5766afa",
+            "lineageTag": "f1eb7724-4af2-4422-8856-e202ff6d864c",
             "sourceColumn": "bairro",
             "summarizeBy": "none"
           }
         ],
-        "lineageTag": "871e72b7-c1e5-4675-8819-3c87dcaf0fd0",
+        "lineageTag": "871e00bf-2197-4516-9c7b-8237251d5746",
         "partitions": [
           {
             "name": "dw dim_unidades",
@@ -911,7 +4045,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_dim_unidades = Fonte{[Schema=\"dw\",Item=\"dim_unidades\"]}[Data]",
                 "in",
                 "    dw_dim_unidades"
@@ -934,7 +4068,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "a1814038-293b-4fb4-a06b-c40981fc095c",
+            "lineageTag": "0be4583c-eba6-43fd-bd10-80bdf0e76543",
             "sourceColumn": "sk_unidades",
             "summarizeBy": "none"
           },
@@ -948,7 +4082,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "b15b7dae-9ccb-49af-965c-763fd95601af",
+            "lineageTag": "c2b93c39-ee17-46d9-bb31-fcf6939a7464",
             "sourceColumn": "sk_data",
             "summarizeBy": "none"
           },
@@ -962,7 +4096,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "9314d970-5d62-4ed9-a5bc-d92271e65148",
+            "lineageTag": "419068c5-7626-417c-a9c1-596e9fb22e8d",
             "sourceColumn": "sk_equipes",
             "summarizeBy": "none"
           },
@@ -976,7 +4110,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "87bb432c-698f-4aaf-a328-189bf6230c94",
+            "lineageTag": "4c12110f-4f5a-428d-9a76-872323c72802",
             "sourceColumn": "sk_profissionais",
             "summarizeBy": "none"
           },
@@ -990,12 +4124,12 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "0609ffb0-cd9a-4832-ac8e-2c1ccf2731e1",
+            "lineageTag": "6099168f-02ab-49c5-9213-a14a910fc101",
             "sourceColumn": "qt_atendimentos",
             "summarizeBy": "sum"
           }
         ],
-        "lineageTag": "a8a9c096-fdd9-4421-88e2-8e43407a3a0f",
+        "lineageTag": "a8b5141b-8743-4e1d-a5f1-3377cbc17f25",
         "partitions": [
           {
             "name": "dw fato_atendimentos",
@@ -1003,7 +4137,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
                 "    dw_fato_atendimentos = Fonte{[Schema=\"dw\",Item=\"fato_atendimentos\"]}[Data]",
                 "in",
                 "    dw_fato_atendimentos"
