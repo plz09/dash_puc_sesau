@@ -16,7 +16,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"dw dim_data\",\"dw dim_equipes\",\"dw dim_profissionais\",\"dw dim_unidades\",\"dw fato_atendimentos\"]"
+        "value": "[\"dw dim_data\",\"dw dim_equipes\",\"dw dim_profissionais\",\"dw dim_unidades\",\"dw fato_atendimentos\",\"Medidas\"]"
       }
     ],
     "culture": "pt-BR",
@@ -3452,6 +3452,16 @@
       },
       {
         "name": "dw dim_data",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_data",
@@ -3547,7 +3557,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
                 "    dw_dim_data = Fonte{[Schema=\"dw\",Item=\"dim_data\"]}[Data]",
                 "in",
                 "    dw_dim_data"
@@ -3760,6 +3770,16 @@
       },
       {
         "name": "dw dim_equipes",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_equipes",
@@ -3852,7 +3872,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
                 "    dw_dim_equipes = Fonte{[Schema=\"dw\",Item=\"dim_equipes\"]}[Data]",
                 "in",
                 "    dw_dim_equipes"
@@ -3864,6 +3884,16 @@
       },
       {
         "name": "dw dim_profissionais",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_profissionais",
@@ -3956,7 +3986,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
                 "    dw_dim_profissionais = Fonte{[Schema=\"dw\",Item=\"dim_profissionais\"]}[Data]",
                 "in",
                 "    dw_dim_profissionais"
@@ -3968,6 +3998,16 @@
       },
       {
         "name": "dw dim_unidades",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_unidades",
@@ -4045,7 +4085,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
                 "    dw_dim_unidades = Fonte{[Schema=\"dw\",Item=\"dim_unidades\"]}[Data]",
                 "in",
                 "    dw_dim_unidades"
@@ -4057,6 +4097,16 @@
       },
       {
         "name": "dw fato_atendimentos",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "sk_unidades",
@@ -4137,10 +4187,45 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost:5259\", \"db_novo_dump\"),",
+                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
                 "    dw_fato_atendimentos = Fonte{[Schema=\"dw\",Item=\"fato_atendimentos\"]}[Data]",
                 "in",
                 "    dw_fato_atendimentos"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "31dce8bb-0c17-40c2-865d-b273c2db5b01",
+        "measures": [
+          {
+            "name": "Qtd Atendimentos",
+            "expression": "SUM('dw fato_atendimentos'[qt_atendimentos])",
+            "formatString": "0",
+            "lineageTag": "5ebed074-d61d-4df2-ac24-8f531cf8be3d"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Coluna 1\" = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"Coluna 1\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
+                "in",
+                "    #\"Colunas Removidas\""
               ],
               "type": "m"
             }
