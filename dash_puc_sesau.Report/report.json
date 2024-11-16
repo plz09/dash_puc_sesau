@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -63,6 +63,11 @@
           {
             "name": "devolucao-do-produto7317566483421463.png",
             "path": "devolucao-do-produto7317566483421463.png",
+            "type": 100
+          },
+          {
+            "name": "logo_prefs582276373935511.png",
+            "path": "logo_prefs582276373935511.png",
             "type": 100
           },
           {
@@ -257,31 +262,112 @@
       "ordinal": 3,
       "visualContainers": [
         {
-          "config": "{\"name\":\"081fab432b9f2b1e3b33\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":532.4203085478819,\"height\":437.7373155329235,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dw dim_unidades.nome\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nome\"},\"Name\":\"dw dim_unidades.nome\",\"NativeReferenceName\":\"Unidades\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total Atendimentos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}}}]},\"columnProperties\":{\"dw dim_unidades.nome\":{\"displayName\":\"Unidades\"},\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total Atendimentos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"081fab432b9f2b1e3b33\",\"layouts\":[{\"id\":0,\"position\":{\"x\":199.48051948051946,\"y\":174.54545454545453,\"z\":0,\"width\":539.2207792207791,\"height\":372.46753246753246,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dw dim_unidades.nome\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nome\"},\"Name\":\"dw dim_unidades.nome\",\"NativeReferenceName\":\"Unidades\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total Atendimentos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}}}]},\"columnProperties\":{\"dw dim_unidades.nome\":{\"displayName\":\"Unidades\"},\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total Atendimentos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dw fato_atendimentos\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"400000L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
-          "height": 437.74,
-          "width": 532.42,
-          "x": 9.61,
-          "y": 0.00,
+          "height": 372.47,
+          "width": 539.22,
+          "x": 199.48,
+          "y": 174.55,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"bb24507778ac84b6fbb0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":554.3757851890317,\"y\":20.58325935107791,\"z\":1000,\"width\":725.9029464480143,\"height\":417.1540561818456,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"dw dim_unidades.nome\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nome\"},\"Name\":\"dw dim_unidades.nome\",\"NativeReferenceName\":\"nome\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Soma de qt_atendimentos\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"0833084bccd73963d782\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":174.54545454545453,\"z\":3000,\"width\":199.48051948051946,\"height\":130.9090909090909,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total de Atendimentos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 130.91,
+          "width": 199.48,
+          "x": 0.00,
+          "y": 174.55,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"3aed13b83c29bcddf143\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1195.3246753246751,\"y\":0,\"z\":8000,\"width\":49.870129870129865,\"height\":40.51948051948052,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'rightArrow'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'5b466b7a08d61f119ea7'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para ir para a próxima página'\"}}}}}],\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para ir para a próxima página\\n'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.52,
+          "width": 49.87,
+          "x": 1195.32,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"53271143166e5062367e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":751.1688311688312,\"y\":98.18181818181817,\"z\":11000,\"width\":288.3116883116883,\"height\":54.54545454545454,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dw dim_data.data_completa\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"data_completa\"},\"Name\":\"dw dim_data.data_completa\",\"NativeReferenceName\":\"DATA\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"data_completa\"}}}]},\"columnProperties\":{\"dw dim_data.data_completa\":{\"displayName\":\"DATA\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Relative'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 54.55,
+          "width": 288.31,
+          "x": 751.17,
+          "y": 98.18,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"546610f8e3abb2b8feab\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1061.2987012987012,\"y\":98.18181818181817,\"z\":10000,\"width\":218.18181818181816,\"height\":65.45454545454545,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dw dim_unidades.nome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nome\"},\"Name\":\"dw dim_unidades.nome\",\"NativeReferenceName\":\"UNIDADES\"}]},\"columnProperties\":{\"dw dim_unidades.nome\":{\"displayName\":\"UNIDADES\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.45,
+          "width": 218.18,
+          "x": 1061.30,
+          "y": 98.18,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"b5f8e8752299b0b84c8f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1145.4545454545453,\"y\":0,\"z\":9000,\"width\":49.870129870129865,\"height\":40.51948051948052,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'leftArrow'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'55ef6f731c64a12686ab'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para voltar ao menu inicial'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para voltar ao menu principal\\n'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.52,
+          "width": 49.87,
+          "x": 1145.45,
+          "y": 0.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"b6339be2a4fe248522c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.35064935064935,\"y\":0,\"z\":7000,\"width\":272.7272727272727,\"height\":130.9090909090909,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"logo_prefs582276373935511.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 130.91,
+          "width": 272.73,
+          "x": 9.35,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"bb24507778ac84b6fbb0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":738.7012987012987,\"y\":174.54545454545453,\"z\":1000,\"width\":540.7792207792207,\"height\":411.4285714285714,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}],\"Group\":[{\"queryRef\":\"dw dim_unidades.bairro\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total de Atendimentos \"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"bairro\"},\"Name\":\"dw dim_unidades.bairro\",\"NativeReferenceName\":\"Bairro\"}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos \"},\"dw dim_unidades.bairro\":{\"displayName\":\"Bairro\"}},\"drillFilterOtherVisuals\":true}}",
           "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dw fato_atendimentos\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"400000L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
-          "height": 417.15,
-          "width": 725.90,
-          "x": 554.38,
-          "y": 20.58,
+          "height": 411.43,
+          "width": 540.78,
+          "x": 738.70,
+          "y": 174.55,
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"d0b86739abcbaccfeaac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":447.34283656342654,\"z\":2000,\"width\":1270.6732106065429,\"height\":273.07124072430025,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}],\"Category\":[{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Ano\",\"active\":true},{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Trimestre\",\"active\":true},{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Mês\",\"active\":true},{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Dia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dw dim_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Soma de qt_atendimentos\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"data_completa Ano\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Trimestre\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Trimestre\",\"NativeReferenceName\":\"data_completa Trimestre\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"data_completa Mês\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Dia\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Dia\",\"NativeReferenceName\":\"data_completa Dia\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"c393414f48f4e40b82c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":305.45454545454544,\"z\":4000,\"width\":199.48051948051946,\"height\":109.09090909090908,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(dw dim_unidades.cnes)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"cnes\"}},\"Function\":2},\"Name\":\"CountNonNull(dw dim_unidades.cnes)\",\"NativeReferenceName\":\"Total de Unidades\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"cnes\"}},\"Function\":2}}}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos\"},\"CountNonNull(dw dim_unidades.cnes)\":{\"displayName\":\"Total de Unidades\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 273.07,
-          "width": 1270.67,
-          "x": 9.61,
-          "y": 447.34,
+          "height": 109.09,
+          "width": 199.48,
+          "x": 0.00,
+          "y": 305.45,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"d0b86739abcbaccfeaac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.35064935064935,\"y\":557.9220779220778,\"z\":2000,\"width\":1271.6883116883116,\"height\":162.07792207792207,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}],\"Category\":[{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Ano\",\"active\":true},{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Mês\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dw dim_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total de Atendimentos \"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"data_completa Ano\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"data_completa Mês\"}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos \"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 162.08,
+          "width": 1271.69,
+          "x": 9.35,
+          "y": 557.92,
           "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d9e6b2286670fa80a1b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":414.5454545454545,\"z\":5000,\"width\":199.48051948051946,\"height\":115.32467532467531,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(dw dim_unidades.bairro)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"bairro\"}},\"Function\":2},\"Name\":\"Min(dw dim_unidades.bairro)\",\"NativeReferenceName\":\"Total de Bairros Cobertos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"bairro\"}},\"Function\":2}}}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos\"},\"CountNonNull(dw dim_unidades.cnes)\":{\"displayName\":\"Total de Unidades\"},\"Min(dw dim_unidades.bairro)\":{\"displayName\":\"Total de Bairros Cobertos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 115.32,
+          "width": 199.48,
+          "x": 0.00,
+          "y": 414.55,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"dfc0e40981354b23dabb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":372.46753246753246,\"y\":31.168831168831165,\"z\":6000,\"width\":701.2987012987012,\"height\":45.19480519480519,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"ATENDIMENTOS AMBULATORIAIS - VISÃO UNIDADES\",\"textStyle\":{\"fontFamily\":\"Arial Unicode MS\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 45.19,
+          "width": 701.30,
+          "x": 372.47,
+          "y": 31.17,
+          "z": 6000.00
         }
       ],
       "width": 1280.00
