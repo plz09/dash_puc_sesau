@@ -4210,7 +4210,7 @@
           {
             "name": "Qtd Atendimentos",
             "expression": "SUM('dw fato_atendimentos'[qt_atendimentos])",
-            "formatString": "0",
+            "formatString": "#,0",
             "lineageTag": "5ebed074-d61d-4df2-ac24-8f531cf8be3d"
           }
         ],

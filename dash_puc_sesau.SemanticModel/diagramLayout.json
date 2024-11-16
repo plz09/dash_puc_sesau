@@ -4,16 +4,17 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 531.0367126758423,
-        "y": 2.2549330691833545
+        "x": 0,
+        "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 868.12384814406664,
-            "y": 351.59574178649552
+            "x": 671.48807607334379,
+            "y": 325.77488282771378
           },
           "nodeIndex": "dw dim_data",
+          "nodeLineageTag": "fcccb4c6-396c-417f-8769-498dc2b5d1ff",
           "size": {
             "height": 200,
             "width": 234
@@ -70,8 +71,8 @@
         },
         {
           "location": {
-            "x": 858.12384814406664,
-            "y": 324.49256494970848
+            "x": 468.82474384243346,
+            "y": 185.45717055626807
           },
           "nodeIndex": "Medidas",
           "nodeLineageTag": "31dce8bb-0c17-40c2-865d-b273c2db5b01",
@@ -83,7 +84,7 @@
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 70.955543900968792,
+      "zoomValue": 50.346892102823091,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
