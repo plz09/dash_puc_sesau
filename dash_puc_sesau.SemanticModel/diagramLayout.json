@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 671.48807607334379,
-            "y": 325.77488282771378
+            "x": 750.9368728695955,
+            "y": 301.9402437888383
           },
           "nodeIndex": "dw dim_data",
           "nodeLineageTag": "fcccb4c6-396c-417f-8769-498dc2b5d1ff",
@@ -23,10 +23,11 @@
         },
         {
           "location": {
-            "x": 1155.1267502033611,
-            "y": -10
+            "x": 1157.1129701232674,
+            "y": 0
           },
           "nodeIndex": "dw dim_equipes",
+          "nodeLineageTag": "4ad801d6-c1d1-41c8-94f3-e44eaf79fa5d",
           "size": {
             "height": 224,
             "width": 234
@@ -35,10 +36,11 @@
         },
         {
           "location": {
-            "x": 1155.2540530236956,
-            "y": 518.985129899417
+            "x": 1145.3229534241641,
+            "y": 632.19966533407558
           },
           "nodeIndex": "dw dim_profissionais",
+          "nodeLineageTag": "f5d71542-347d-4ca5-ae47-8b1bc0601eb2",
           "size": {
             "height": 224,
             "width": 234
@@ -47,10 +49,11 @@
         },
         {
           "location": {
-            "x": 1442.2476962881333,
-            "y": 172.01609329110829
+            "x": 1509.3819204887725,
+            "y": 311.0514876845487
           },
           "nodeIndex": "dw dim_unidades",
+          "nodeLineageTag": "871e00bf-2197-4516-9c7b-8237251d5746",
           "size": {
             "height": 200,
             "width": 234
@@ -59,10 +62,11 @@
         },
         {
           "location": {
-            "x": 1155.1942349492754,
-            "y": 266.58307903340807
+            "x": 1147.2493552696503,
+            "y": 304.32125751162761
           },
           "nodeIndex": "dw fato_atendimentos",
+          "nodeLineageTag": "a8b5141b-8743-4e1d-a5f1-3377cbc17f25",
           "size": {
             "height": 200,
             "width": 234

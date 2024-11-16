@@ -1416,6 +1416,16 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
+                  },
+                  {
+                    "Especialização (CBO)": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -1847,6 +1857,85 @@
                 "Visibility": {
                   "Value": "Hidden"
                 }
+              },
+              "medida": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "medida": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.qtd_atendimentos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Qtd Atendimentos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "qtd atendimentos": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.qtd_profissionais": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Qtd Profissionais"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "qtd profissionais": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.qtd_profissionais_com_equipe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Qtd Profissionais com equipe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "qtd profissionais com equipe": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.qtd_profissionais_sem_equipe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Qtd Profissionais sem equipe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "qtd profissionais sem equipe": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
               }
             },
             "Language": "en-US",
@@ -2643,6 +2732,105 @@
                 },
                 "State": "Generated"
               },
+              "dw_dim_profissionais_has_medida_qtd_profissionais": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.qtd_profissionais"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_qtd_profissionais",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "medida.qtd_profissionais": {
+                    "Target": {
+                      "Entity": "medida.qtd_profissionais"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_medida_qtd_profissionais_com_equipe": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.qtd_profissionais_com_equipe"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_qtd_profissionais_com_equipe",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "medida.qtd_profissionais_com_equipe": {
+                    "Target": {
+                      "Entity": "medida.qtd_profissionais_com_equipe"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_dim_profissionais_has_medida_qtd_profissionais_sem_equipe": {
+                "Binding": {
+                  "ConceptualEntity": "dw dim_profissionais"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.qtd_profissionais_sem_equipe"
+                      },
+                      "Subject": {
+                        "Role": "dw_dim_profissionais"
+                      }
+                    },
+                    "ID": "dw_dim_profissionaises_have_qtd_profissionais_sem_equipe",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_dim_profissionais": {
+                    "Target": {
+                      "Entity": "dw_dim_profissionais"
+                    }
+                  },
+                  "medida.qtd_profissionais_sem_equipe": {
+                    "Target": {
+                      "Entity": "medida.qtd_profissionais_sem_equipe"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "dw_dim_profissionais_has_profissional_cbo": {
                 "Binding": {
                   "ConceptualEntity": "dw dim_profissionais"
@@ -3131,6 +3319,39 @@
                   "dw_fato_atendimento": {
                     "Target": {
                       "Entity": "dw_fato_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dw_fato_atendimento_has_medida_qtd_atendimentos": {
+                "Binding": {
+                  "ConceptualEntity": "dw fato_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.qtd_atendimentos"
+                      },
+                      "Subject": {
+                        "Role": "dw_fato_atendimento"
+                      }
+                    },
+                    "ID": "dw_fato_atendimentos_have_qtd_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dw_fato_atendimento": {
+                    "Target": {
+                      "Entity": "dw_fato_atendimento"
+                    }
+                  },
+                  "medida.qtd_atendimentos": {
+                    "Target": {
+                      "Entity": "medida.qtd_atendimentos"
                     }
                   }
                 },
@@ -4212,6 +4433,24 @@
             "expression": "SUM('dw fato_atendimentos'[qt_atendimentos])",
             "formatString": "#,0",
             "lineageTag": "5ebed074-d61d-4df2-ac24-8f531cf8be3d"
+          },
+          {
+            "name": "Qtd Profissionais",
+            "expression": "DISTINCTCOUNT('dw dim_profissionais'[sk_profissionais])",
+            "formatString": "#,0",
+            "lineageTag": "79c78766-3893-4d43-ba67-1a0fa1b02269"
+          },
+          {
+            "name": "Qtd Profissionais sem equipe",
+            "expression": "CALCULATE(DISTINCTCOUNT('dw dim_profissionais'[sk_profissionais]), 'dw dim_profissionais'[data_entrada_equipe_id] = BLANK()) ",
+            "formatString": "#,0",
+            "lineageTag": "2f566909-f958-460d-a891-102ee50a3a77"
+          },
+          {
+            "name": "Qtd Profissionais com equipe",
+            "expression": "CALCULATE(DISTINCTCOUNT('dw dim_profissionais'[sk_profissionais]), 'dw dim_profissionais'[data_entrada_equipe_id] <> BLANK()) ",
+            "formatString": "#,0",
+            "lineageTag": "09d4ac4c-5af8-4454-b004-fc94d552a406"
           }
         ],
         "partitions": [
