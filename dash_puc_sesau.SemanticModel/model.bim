@@ -685,6 +685,12 @@
                     }
                   },
                   {
+                    "data": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
                     "sk information": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -725,6 +731,46 @@
                     }
                   },
                   {
+                    "information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
                     "sk document": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -736,16 +782,6 @@
                   },
                   {
                     "sk figure": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sk record": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -1634,6 +1670,12 @@
                     }
                   },
                   {
+                    "data": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
                     "sk information": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -1674,6 +1716,46 @@
                     }
                   },
                   {
+                    "information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
                     "sk document": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -1685,16 +1767,6 @@
                   },
                   {
                     "sk figure": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sk record": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -2915,6 +2987,11 @@
                     "Nouns": [
                       {
                         "sk data": {
+                          "State": "Generated"
+                        }
+                      },
+                      {
+                        "data": {
                           "State": "Generated"
                         }
                       }
