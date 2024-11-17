@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.138.782.0 (24.11)"
+        "value": "2.131.901.0 (24.07)"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -3467,6 +3467,123 @@
     "sourceQueryCulture": "pt-BR",
     "tables": [
       {
+        "name": "dw dim_data",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "sk_data",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "12f9e9bd-95d0-414c-aa73-83d1ed121376",
+            "sourceColumn": "sk_data",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_completa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "e9f64a1f-4fee-41d5-ba81-95133ee56137",
+            "sourceColumn": "data_completa",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_63795c96-dd41-4973-abf1-7d6f2164cdf3"
+                },
+                "isDefault": true,
+                "relationship": "f50a1941-b7b3-4695-a1ba-52d53d8a0a9d"
+              }
+            ]
+          },
+          {
+            "name": "dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3df10dda-947f-49cb-8b50-ce0734b1490d",
+            "sourceColumn": "dia",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d579fc76-a478-48f1-a2cb-0e6b62eb7911",
+            "sourceColumn": "mes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cdaf46ae-ffbc-47dd-be47-5a93233e5231",
+            "sourceColumn": "ano",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "fcccb4c6-396c-417f-8769-498dc2b5d1ff",
+        "partitions": [
+          {
+            "name": "dw dim_data",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    dw_dim_data = Fonte{[Schema=\"dw\",Item=\"dim_data\"]}[Data]",
+                "in",
+                "    dw_dim_data"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
         "name": "DateTableTemplate_2fdab1de-35ec-4b96-8c8a-6a4b54bfbc45",
         "annotations": [
           {
@@ -3672,7 +3789,7 @@
         ]
       },
       {
-        "name": "dw dim_data",
+        "name": "dw dim_equipes",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -3685,6 +3802,347 @@
         ],
         "columns": [
           {
+            "name": "sk_equipes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4931c7bd-f473-4c3e-becb-ef41e6745b98",
+            "sourceColumn": "sk_equipes",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "equipe_ine",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b821ba67-3adf-4b67-93c0-873ed2c5e174",
+            "sourceColumn": "equipe_ine",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "equipe_nome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4a8bad1c-e098-4a8d-aca1-f6e11be062af",
+            "sourceColumn": "equipe_nome",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "equipe_tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1bd61089-2f07-4687-90f8-6f36051c358f",
+            "sourceColumn": "equipe_tipo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_ativacao_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "65dafc2f-3f0b-44c9-8727-111d3bcd90aa",
+            "sourceColumn": "data_ativacao_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_desativacao_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dd99a900-4be2-43e8-98c3-aa643ba9bb49",
+            "sourceColumn": "data_desativacao_id",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4ad801d6-c1d1-41c8-94f3-e44eaf79fa5d",
+        "partitions": [
+          {
+            "name": "dw dim_equipes",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    dw_dim_equipes = Fonte{[Schema=\"dw\",Item=\"dim_equipes\"]}[Data]",
+                "in",
+                "    dw_dim_equipes"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dw dim_profissionais",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "sk_profissionais",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "603c6a84-707c-443e-b5a2-db2fe525fbfc",
+            "sourceColumn": "sk_profissionais",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "profissional_cns",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "db406e0c-04a4-467d-a2e4-4c1cd3347a94",
+            "sourceColumn": "profissional_cns",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "profissional_cbo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "26e56c06-c49b-4971-88db-b8a2b708c84f",
+            "sourceColumn": "profissional_cbo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "profissional_nome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "55cb3b04-2fae-4628-a980-a50ae5cf3abc",
+            "sourceColumn": "profissional_nome",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_entrada_equipe_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4cafa2ec-0591-4fcc-ba4f-5fedc28c33b5",
+            "sourceColumn": "data_entrada_equipe_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_desligamento_equipe_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "274f0198-15a0-4540-a983-d9a1f157707c",
+            "sourceColumn": "data_desligamento_equipe_id",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "f5d71542-347d-4ca5-ae47-8b1bc0601eb2",
+        "partitions": [
+          {
+            "name": "dw dim_profissionais",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    dw_dim_profissionais = Fonte{[Schema=\"dw\",Item=\"dim_profissionais\"]}[Data]",
+                "in",
+                "    dw_dim_profissionais"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dw dim_unidades",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "sk_unidades",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5d835cab-b107-48aa-a580-b614ba627aa7",
+            "sourceColumn": "sk_unidades",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cnes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3c034de1-34bf-4314-8e1e-a951212b7fad",
+            "sourceColumn": "cnes",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "771f5ff7-0213-4e5e-ba7c-713193779b83",
+            "sourceColumn": "nome",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "logradouro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dddde480-cb2c-49e8-9e07-e27ce0d1a396",
+            "sourceColumn": "logradouro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "bairro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f1eb7724-4af2-4422-8856-e202ff6d864c",
+            "sourceColumn": "bairro",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "871e00bf-2197-4516-9c7b-8237251d5746",
+        "partitions": [
+          {
+            "name": "dw dim_unidades",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    dw_dim_unidades = Fonte{[Schema=\"dw\",Item=\"dim_unidades\"]}[Data]",
+                "in",
+                "    dw_dim_unidades"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dw fato_atendimentos",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "sk_unidades",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0be4583c-eba6-43fd-bd10-80bdf0e76543",
+            "sourceColumn": "sk_unidades",
+            "summarizeBy": "none"
+          },
+          {
             "name": "sk_data",
             "annotations": [
               {
@@ -3694,41 +4152,12 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "12f9e9bd-95d0-414c-aa73-83d1ed121376",
+            "lineageTag": "c2b93c39-ee17-46d9-bb31-fcf6939a7464",
             "sourceColumn": "sk_data",
             "summarizeBy": "none"
           },
           {
-            "name": "data_completa",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "e9f64a1f-4fee-41d5-ba81-95133ee56137",
-            "sourceColumn": "data_completa",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_63795c96-dd41-4973-abf1-7d6f2164cdf3"
-                },
-                "isDefault": true,
-                "relationship": "f50a1941-b7b3-4695-a1ba-52d53d8a0a9d"
-              }
-            ]
-          },
-          {
-            "name": "dia",
+            "name": "sk_equipes",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -3737,12 +4166,12 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "3df10dda-947f-49cb-8b50-ce0734b1490d",
-            "sourceColumn": "dia",
-            "summarizeBy": "sum"
+            "lineageTag": "419068c5-7626-417c-a9c1-596e9fb22e8d",
+            "sourceColumn": "sk_equipes",
+            "summarizeBy": "none"
           },
           {
-            "name": "mes",
+            "name": "sk_profissionais",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -3751,12 +4180,12 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "d579fc76-a478-48f1-a2cb-0e6b62eb7911",
-            "sourceColumn": "mes",
-            "summarizeBy": "sum"
+            "lineageTag": "4c12110f-4f5a-428d-9a76-872323c72802",
+            "sourceColumn": "sk_profissionais",
+            "summarizeBy": "none"
           },
           {
-            "name": "ano",
+            "name": "qt_atendimentos",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -3765,23 +4194,23 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "cdaf46ae-ffbc-47dd-be47-5a93233e5231",
-            "sourceColumn": "ano",
+            "lineageTag": "6099168f-02ab-49c5-9213-a14a910fc101",
+            "sourceColumn": "qt_atendimentos",
             "summarizeBy": "sum"
           }
         ],
-        "lineageTag": "fcccb4c6-396c-417f-8769-498dc2b5d1ff",
+        "lineageTag": "a8b5141b-8743-4e1d-a5f1-3377cbc17f25",
         "partitions": [
           {
-            "name": "dw dim_data",
+            "name": "dw fato_atendimentos",
             "mode": "import",
             "source": {
               "expression": [
                 "let",
-                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
-                "    dw_dim_data = Fonte{[Schema=\"dw\",Item=\"dim_data\"]}[Data]",
+                "    Fonte = PostgreSQL.Database(\"localhost:5258\", \"db_destino\"),",
+                "    dw_fato_atendimentos = Fonte{[Schema=\"dw\",Item=\"fato_atendimentos\"]}[Data]",
                 "in",
-                "    dw_dim_data"
+                "    dw_fato_atendimentos"
               ],
               "type": "m"
             }
@@ -3990,440 +4419,15 @@
         "showAsVariationsOnly": true
       },
       {
-        "name": "dw dim_equipes",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "sk_equipes",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "4931c7bd-f473-4c3e-becb-ef41e6745b98",
-            "sourceColumn": "sk_equipes",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "equipe_ine",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "b821ba67-3adf-4b67-93c0-873ed2c5e174",
-            "sourceColumn": "equipe_ine",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "equipe_nome",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4a8bad1c-e098-4a8d-aca1-f6e11be062af",
-            "sourceColumn": "equipe_nome",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "equipe_tipo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1bd61089-2f07-4687-90f8-6f36051c358f",
-            "sourceColumn": "equipe_tipo",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "data_ativacao_id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "65dafc2f-3f0b-44c9-8727-111d3bcd90aa",
-            "sourceColumn": "data_ativacao_id",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "data_desativacao_id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "dd99a900-4be2-43e8-98c3-aa643ba9bb49",
-            "sourceColumn": "data_desativacao_id",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "4ad801d6-c1d1-41c8-94f3-e44eaf79fa5d",
-        "partitions": [
-          {
-            "name": "dw dim_equipes",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
-                "    dw_dim_equipes = Fonte{[Schema=\"dw\",Item=\"dim_equipes\"]}[Data]",
-                "in",
-                "    dw_dim_equipes"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "dw dim_profissionais",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "sk_profissionais",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "603c6a84-707c-443e-b5a2-db2fe525fbfc",
-            "sourceColumn": "sk_profissionais",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "profissional_cns",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "db406e0c-04a4-467d-a2e4-4c1cd3347a94",
-            "sourceColumn": "profissional_cns",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "profissional_cbo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "26e56c06-c49b-4971-88db-b8a2b708c84f",
-            "sourceColumn": "profissional_cbo",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "profissional_nome",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "55cb3b04-2fae-4628-a980-a50ae5cf3abc",
-            "sourceColumn": "profissional_nome",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "data_entrada_equipe_id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "4cafa2ec-0591-4fcc-ba4f-5fedc28c33b5",
-            "sourceColumn": "data_entrada_equipe_id",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "data_desligamento_equipe_id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "274f0198-15a0-4540-a983-d9a1f157707c",
-            "sourceColumn": "data_desligamento_equipe_id",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "f5d71542-347d-4ca5-ae47-8b1bc0601eb2",
-        "partitions": [
-          {
-            "name": "dw dim_profissionais",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
-                "    dw_dim_profissionais = Fonte{[Schema=\"dw\",Item=\"dim_profissionais\"]}[Data]",
-                "in",
-                "    dw_dim_profissionais"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "dw dim_unidades",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "sk_unidades",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "5d835cab-b107-48aa-a580-b614ba627aa7",
-            "sourceColumn": "sk_unidades",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "cnes",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "3c034de1-34bf-4314-8e1e-a951212b7fad",
-            "sourceColumn": "cnes",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "nome",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "771f5ff7-0213-4e5e-ba7c-713193779b83",
-            "sourceColumn": "nome",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "logradouro",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "dddde480-cb2c-49e8-9e07-e27ce0d1a396",
-            "sourceColumn": "logradouro",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "bairro",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f1eb7724-4af2-4422-8856-e202ff6d864c",
-            "sourceColumn": "bairro",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "871e00bf-2197-4516-9c7b-8237251d5746",
-        "partitions": [
-          {
-            "name": "dw dim_unidades",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
-                "    dw_dim_unidades = Fonte{[Schema=\"dw\",Item=\"dim_unidades\"]}[Data]",
-                "in",
-                "    dw_dim_unidades"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "dw fato_atendimentos",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "sk_unidades",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "0be4583c-eba6-43fd-bd10-80bdf0e76543",
-            "sourceColumn": "sk_unidades",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "sk_data",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "c2b93c39-ee17-46d9-bb31-fcf6939a7464",
-            "sourceColumn": "sk_data",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "sk_equipes",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "419068c5-7626-417c-a9c1-596e9fb22e8d",
-            "sourceColumn": "sk_equipes",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "sk_profissionais",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "4c12110f-4f5a-428d-9a76-872323c72802",
-            "sourceColumn": "sk_profissionais",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "qt_atendimentos",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "6099168f-02ab-49c5-9213-a14a910fc101",
-            "sourceColumn": "qt_atendimentos",
-            "summarizeBy": "sum"
-          }
-        ],
-        "lineageTag": "a8b5141b-8743-4e1d-a5f1-3377cbc17f25",
-        "partitions": [
-          {
-            "name": "dw fato_atendimentos",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = PostgreSQL.Database(\"localhost\", \"db_destino\"),",
-                "    dw_fato_atendimentos = Fonte{[Schema=\"dw\",Item=\"fato_atendimentos\"]}[Data]",
-                "in",
-                "    dw_fato_atendimentos"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
         "name": "Medidas",
         "annotations": [
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "31dce8bb-0c17-40c2-865d-b273c2db5b01",
