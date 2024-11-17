@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -119,6 +119,180 @@
           "x": 116.88,
           "y": 168.31,
           "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "visão equipes",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ad2364b6553abe48c29e",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00893b55a7005c026f40\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61.62808192928418,\"y\":579.0714113355382,\"z\":9000,\"width\":1218.6081106016948,\"height\":141.86086783722018,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}],\"Category\":[{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Ano\",\"active\":true},{\"queryRef\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Mês\",\"active\":true}],\"Series\":[{\"queryRef\":\"dw dim_equipes.equipe_tipo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dw dim_data\",\"Type\":0},{\"Name\":\"d2\",\"Entity\":\"dw dim_equipes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total de Atendimentos \"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"data_completa Ano\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Name\":\"Variation\",\"Property\":\"data_completa\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"dw dim_data.data_completa.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"data_completa Mês\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d2\"}},\"Property\":\"equipe_tipo\"},\"Name\":\"dw dim_equipes.equipe_tipo\",\"NativeReferenceName\":\"Equipe\"}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos \"},\"dw dim_equipes.equipe_tipo\":{\"displayName\":\"Equipe\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 141.86,
+          "width": 1218.61,
+          "x": 61.63,
+          "y": 579.07,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"141abcb10fa127a8b64e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":371.8708856094742,\"y\":31.560997671652792,\"z\":5000,\"width\":714.9252081274394,\"height\":52.1442570227307,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"ATENDIMENTOS AMBULATORIAIS - VISÃO EQUIPES\",\"textStyle\":{\"fontFamily\":\"Arial Unicode MS\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 52.14,
+          "width": 714.93,
+          "x": 371.87,
+          "y": 31.56,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"1d699201956db5eb8cf4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":63.16309321802178,\"y\":157.6280146575759,\"z\":1000,\"width\":208.5770280909228,\"height\":127.61620797668303,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total de Atendimentos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 127.62,
+          "width": 208.58,
+          "x": 63.16,
+          "y": 157.63,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"257f17158289546501c1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61.79087592794992,\"y\":299.3386128250495,\"z\":2000,\"width\":190.73820331998863,\"height\":109.77738320574885,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(dw dim_equipes.sk_equipes)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_equipes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sk_equipes\"}},\"Function\":5},\"Name\":\"CountNonNull(dw dim_equipes.sk_equipes)\",\"NativeReferenceName\":\"Total de Equipes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sk_equipes\"}},\"Function\":5}}}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos\"},\"CountNonNull(dw dim_unidades.cnes)\":{\"displayName\":\"Total de Unidades\"},\"CountNonNull(dw dim_equipes.sk_equipes)\":{\"displayName\":\"Total de Equipes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 109.78,
+          "width": 190.74,
+          "x": 61.79,
+          "y": 299.34,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"385b323078aad35c75fe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.35064935064935,\"y\":138.7012987012987,\"z\":15000,\"width\":35.84415584415584,\"height\":35.84415584415584,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"assistencia-medica048218322342822306.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectioncc689ca8507ff8e1c8c3'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 35.84,
+          "width": 35.84,
+          "x": 9.35,
+          "y": 138.70,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"3a1cd787bf21483263a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":774.4208031113824,\"y\":77.74440389886553,\"z\":10000,\"width\":265.11703169578857,\"height\":66.27925792394714,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dw dim_data.data_completa\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"data_completa\"},\"Name\":\"dw dim_data.data_completa\",\"NativeReferenceName\":\" DATA\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"data_completa\"}}}]},\"columnProperties\":{\"dw dim_data.data_completa\":{\"displayName\":\" DATA\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Relative'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'DATA'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.28,
+          "width": 265.12,
+          "x": 774.42,
+          "y": 77.74,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"3bbd13cccaf944b38071\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.35064935064935,\"y\":266.49350649350646,\"z\":17000,\"width\":45.19480519480519,\"height\":38.96103896103896,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"vacinacao7785456543638771.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectione1aef4c88bf89ec8b33b'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 38.96,
+          "width": 45.19,
+          "x": 9.35,
+          "y": 266.49,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"79ac6864b0fe978c2a38\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61.79087592794992,\"y\":425.5826035116606,\"z\":3000,\"width\":190.73820331998863,\"height\":115.26625236603628,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(dw dim_unidades.bairro)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_unidades\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"bairro\"}},\"Function\":2},\"Name\":\"Min(dw dim_unidades.bairro)\",\"NativeReferenceName\":\"Total de Bairros Cobertos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"bairro\"}},\"Function\":2}}}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos\"},\"CountNonNull(dw dim_unidades.cnes)\":{\"displayName\":\"Total de Unidades\"},\"Min(dw dim_unidades.bairro)\":{\"displayName\":\"Total de Bairros Cobertos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 115.27,
+          "width": 190.74,
+          "x": 61.79,
+          "y": 425.58,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8522ca1b819047265498\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.139557990660174,\"y\":77.90719791060452,\"z\":13000,\"width\":52.325729939958265,\"height\":53.488523938624006,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"USF548428627164099.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionca8335f42477b93f5b8d'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.49,
+          "width": 52.33,
+          "x": 8.14,
+          "y": 77.91,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"907ba0f700f9692c3912\",\"layouts\":[{\"id\":0,\"position\":{\"x\":280.23335367844317,\"y\":154.6516018225433,\"z\":0,\"width\":473.2571574569559,\"height\":372.09407957303654,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}],\"Category\":[{\"queryRef\":\"dw dim_equipes.equipe_nome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dw dim_equipes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Total de Atendimento\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"equipe_nome\"},\"Name\":\"dw dim_equipes.equipe_nome\",\"NativeReferenceName\":\"equipe_nome\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimento\"},\"dw dim_equipes.equipe_nome\":{\"displayName\":\"Equipes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 372.09,
+          "width": 473.26,
+          "x": 280.23,
+          "y": 154.65,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"91461be3869669ed4300\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.35064935064935,\"y\":201.03896103896102,\"z\":16000,\"width\":40.51948051948052,\"height\":38.96103896103896,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"agendar1355839861372703.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'48f0575c90b2ed16de02'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 38.96,
+          "width": 40.52,
+          "x": 9.35,
+          "y": 201.04,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"9d13e1215c66903cf5f4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":12000,\"width\":57.662337662337656,\"height\":1999.4805194805192,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"15L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#063970'\"}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#998D8A'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 1999.48,
+          "width": 57.66,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"9fe91006c11e8590d325\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1195.3246753246751,\"y\":0,\"z\":7000,\"width\":49.870129870129865,\"height\":40.51948051948052,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'rightArrow'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'5b466b7a08d61f119ea7'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para ir para a próxima página'\"}}}}}],\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para ir para a próxima página\\n'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.52,
+          "width": 49.87,
+          "x": 1195.32,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"a09eb40b60b80e5d9865\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.571428571428571,\"y\":21.42857142857143,\"z\":14000,\"width\":38.57142857142858,\"height\":38.57142857142858,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"casa_(1)5761630460542073.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection159df669a8c5cd5ee5b2'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 38.57,
+          "width": 38.57,
+          "x": 8.57,
+          "y": 21.43,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"d0ccbe5d1060fb468109\",\"layouts\":[{\"id\":0,\"position\":{\"x\":54.65131793728975,\"y\":0,\"z\":4000,\"width\":225.58203574115342,\"height\":130.2329278505628,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"logo_prefs582276373935511.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 130.23,
+          "width": 225.58,
+          "x": 54.65,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"d671b1f494b1511c0135\",\"layouts\":[{\"id\":0,\"position\":{\"x\":772.5583343104576,\"y\":155.06055377812024,\"z\":8000,\"width\":507.7203973265884,\"height\":408.92075244141444,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dw fato_atendimentos.qt_atendimentos)\"}],\"Group\":[{\"queryRef\":\"dw dim_equipes.equipe_nome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dw dim_equipes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0},\"Name\":\"Sum(dw fato_atendimentos.qt_atendimentos)\",\"NativeReferenceName\":\"Soma de qt_atendimentos\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"equipe_nome\"},\"Name\":\"dw dim_equipes.equipe_nome\",\"NativeReferenceName\":\"Equipes\"}]},\"columnProperties\":{\"Sum(dw fato_atendimentos.qt_atendimentos)\":{\"displayName\":\"Total de Atendimentos \"},\"dw dim_unidades.bairro\":{\"displayName\":\"Bairro\"},\"dw dim_equipes.equipe_nome\":{\"displayName\":\"Equipes\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dw fato_atendimentos\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"dw fato_atendimentos\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"qt_atendimentos\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"115000L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 408.92,
+          "width": 507.72,
+          "x": 772.56,
+          "y": 155.06,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"ec60bdc73e5d07501c8e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1050.0029807951626,\"y\":77.74440389886553,\"z\":11000,\"width\":218.605271749159,\"height\":66.27925792394714,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dw dim_equipes.equipe_nome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dw dim_equipes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"equipe_nome\"},\"Name\":\"dw dim_equipes.equipe_nome\",\"NativeReferenceName\":\"Equipe\"}]},\"columnProperties\":{\"dw dim_unidades.nome\":{\"displayName\":\"UNIDADES\"},\"dw dim_equipes.equipe_nome\":{\"displayName\":\"Equipe\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.28,
+          "width": 218.61,
+          "x": 1050.00,
+          "y": 77.74,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"f1cec7ae0fa542c54cd0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1145.4545454545453,\"y\":0,\"z\":6000,\"width\":49.870129870129865,\"height\":40.51948051948052,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'leftArrow'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'55ef6f731c64a12686ab'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para voltar ao menu inicial'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Clique aqui para voltar ao menu principal\\n'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.52,
+          "width": 49.87,
+          "x": 1145.45,
+          "y": 0.00,
+          "z": 6000.00
         }
       ],
       "width": 1280.00
